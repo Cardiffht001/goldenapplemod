@@ -7,7 +7,6 @@ object CustomAppleEffect : ModInitializer {
 
     override fun onInitialize() {
         println("Initializing Custom Apple Effect Mod")
-        // Add any initialization code here
         ModItems.registerModItems()
     }
 }
