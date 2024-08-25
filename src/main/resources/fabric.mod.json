@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "custom-apple-effect",
+	"version": "${version}",
+	"name": "Custom Apple Effect",
+	"description": "Modifies the effect of enchanted golden apples",
+	"authors": [
+	  "Me!"
+	],
+	"contact": {
+	  "homepage": "https://fabricmc.net/",
+	  "sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/custom-apple-effect/icon.png",
+	"environment": "*",
+	"entrypoints": {
+	  "main": [
+		{
+		  "value": "name.modid.CustomAppleEffect",
+		  "adapter": "kotlin"
+		}
+	  ],
+	  "client": [
+		{
+		  "value": "name.modid.CustomAppleEffectClient",
+		  "adapter": "kotlin"
+		}
+	  ]
+	},
+	"mixins": [
+	  "custom-apple-effect.mixins.json"
+	],
+	"depends": {
+	  "fabricloader": ">=0.16.2",
+	  "minecraft": "~1.20.4",
+	  "java": ">=17",
+	  "fabric-api": "*",
+	  "fabric-language-kotlin": "*"
+	},
+	"suggests": {
+	  "another-mod": "*"
+	}
+  }
